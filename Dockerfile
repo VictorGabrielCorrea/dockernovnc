@@ -8,7 +8,7 @@ EXPOSE 80
 # Base packages for noVNC
 RUN apt-get update -y && \
     apt-get install -y git x11vnc wget python python-numpy unzip xvfb openbox menu net-tools && \
-    cd /root && git clone https://github.com/VictorGabrielCorrea/noVNCDYNO.git && \
+    cd /root && git clone https://github.com/VictorGabrielCorrea/noVNC.git && \
     cd noVNC/utils && git clone https://github.com/VictorGabrielCorrea/websockify websockify 
 
 ADD scripts/startup.sh /startup.sh
